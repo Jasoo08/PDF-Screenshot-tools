@@ -1,18 +1,47 @@
-### This is a tool which can help LLM read image 
-### LLM nowadays can't able to read image on the pdf
+# PDF Image Screenshot Tool for LLM
+
+A simple tool designed to extract images from PDFs, allowing Large Language Models (LLMs) to analyze and read image content, as current LLMs cannot directly process images embedded within PDF files.
+
+## Requirements
+
+- Python 3
+- PyMuPDF
+
+## Installation
+
+Install the required Python package:
+
+```bash
+pip3 install PyMuPDF
+```
+
+## Setup
+
+1. Create a directory named `PDF_Database` in the same directory as the Python script.
+2. Place your PDF files into the `PDF_Database` directory.
+
+```
+project/
+├── PDF_Database/
+│   └── example.pdf
+└── pdf_image_screenshot.py
+```
 
 ## Usage
 
-### Init
-### Python3 environment
-### pip3 -install PyMuPDF
-#### Create a file call "PDF_Database" in the same directory with the python code
-#### Put your desired pdf in the file
+1. Open your terminal in the directory containing the Python script.
+2. Run the script:
 
-### Open terminal in the python directory
-#### Type: python3 pdf_image_screenshot.py
-#### Choose the index of your pdf
-#### Select desired pixel
-#### Done!
+```bash
+python3 pdf_image_screenshot.py
+```
 
-### You can check your pdf's image file in your orgin directory
+3. Follow the interactive prompts:
+   - Select the index of your PDF file.
+   - Specify the desired resolution or pixel settings.
+
+4. The images extracted from the PDF will be saved in your current working directory.
+
+## Output
+
+- Extracted images are saved directly to your original directory for easy access.
